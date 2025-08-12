@@ -1,0 +1,862 @@
+sharanya@sharanya-Inspiron-14-5430:~$ ffmpeg -protocols | grep -i start
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+sharanya@sharanya-Inspiron-14-5430:~$ ffmpeg -version
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+libavutil      56. 70.100 / 56. 70.100
+libavcodec     58.134.100 / 58.134.100
+libavformat    58. 76.100 / 58. 76.100
+libavdevice    58. 13.100 / 58. 13.100
+libavfilter     7.110.100 /  7.110.100
+libswscale      5.  9.100 /  5.  9.100
+libswresample   3.  9.100 /  3.  9.100
+libpostproc    55.  9.100 / 55.  9.100
+sharanya@sharanya-Inspiron-14-5430:~$ ffmpeg -protocols | grep -i srt
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+  srtp
+  srt
+  srtp
+  srt
+sharanya@sharanya-Inspiron-14-5430:~$ mkdir hls_out
+sharanya@sharanya-Inspiron-14-5430:~$ cd hls_out
+python3 -m http.server 8000
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+127.0.0.1 - - [11/Aug/2025 12:12:56] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Aug/2025 12:12:56] code 404, message File not found
+127.0.0.1 - - [11/Aug/2025 12:12:56] "GET /favicon.ico HTTP/1.1" 404 -
+^C      
+Keyboard interrupt received, exiting.
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ touch player.html
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ open player.html 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ run player.html y
+Command 'run' not found, did you mean:
+  command 'rue' from snap darkdimension-rue (1.0.7)
+  command 'bun' from snap bun-js (1.2.18)
+  command 'crun' from deb crun (0.17+dfsg-1.1ubuntu0.1)
+  command 'rup' from deb rstat-client (4.0.1-11)
+  command 'zrun' from deb moreutils (0.66-1)
+  command 'zun' from deb python3-zunclient (4.4.0-0ubuntu1)
+  command 'runc' from deb runc (1.1.12-0ubuntu2~22.04.1)
+  command 'runc' from deb golang-github-opencontainers-runc-dev (1.1.7-0ubuntu1~22.04.5)
+  command 'grun' from deb grun (0.9.3+git20200303-1)
+  command 'rn' from deb trn4 (4.0-test77-14)
+  command 'runq' from deb exim4-daemon-heavy (4.95-4ubuntu2.6)
+  command 'runq' from deb exim4-daemon-light (4.95-4ubuntu2.6)
+  command 'runq' from deb sendmail-bin (8.15.2-22ubuntu3)
+  command 'srun' from deb slurm-client (21.08.5-2ubuntu1)
+See 'snap info <snapname>' for additional versions.
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ run player.html 
+Command 'run' not found, did you mean:
+  command 'bun' from snap bun-js (1.2.18)
+  command 'rue' from snap darkdimension-rue (1.0.7)
+  command 'runc' from deb runc (1.1.12-0ubuntu2~22.04.1)
+  command 'runc' from deb golang-github-opencontainers-runc-dev (1.1.7-0ubuntu1~22.04.5)
+  command 'srun' from deb slurm-client (21.08.5-2ubuntu1)
+  command 'zun' from deb python3-zunclient (4.4.0-0ubuntu1)
+  command 'rn' from deb trn4 (4.0-test77-14)
+  command 'runq' from deb exim4-daemon-heavy (4.95-4ubuntu2.6)
+  command 'runq' from deb exim4-daemon-light (4.95-4ubuntu2.6)
+  command 'runq' from deb sendmail-bin (8.15.2-22ubuntu3)
+  command 'rup' from deb rstat-client (4.0.1-11)
+  command 'grun' from deb grun (0.9.3+git20200303-1)
+  command 'zrun' from deb moreutils (0.66-1)
+  command 'crun' from deb crun (0.17+dfsg-1.1ubuntu0.1)
+See 'snap info <snapname>' for additional versions.
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ firefox player.html 
+Gtk-Message: 12:17:15.770: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[522517, Main Thread] WARNING: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:201
+
+(firefox_firefox:522517): Gtk-WARNING **: 12:17:15.838: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 12:17:15.838: Failed to load module "canberra-gtk-module"
+[522517, Main Thread] WARNING: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:201
+
+(firefox_firefox:522517): Gtk-WARNING **: 12:17:15.840: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 12:17:15.840: Failed to load module "canberra-gtk-module"
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ firefox player.html 
+Gtk-Message: 12:17:40.647: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+[522653, Main Thread] WARNING: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:201
+
+(firefox_firefox:522653): Gtk-WARNING **: 12:17:40.707: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 12:17:40.707: Failed to load module "canberra-gtk-module"
+[522653, Main Thread] WARNING: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.: 'glib warning', file /build/firefox/parts/firefox/build/toolkit/xre/nsSigHandlers.cpp:201
+
+(firefox_firefox:522653): Gtk-WARNING **: 12:17:40.709: GTK+ module /snap/firefox/6565/gnome-platform/usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so cannot be loaded.
+GTK+ 2.x symbols detected. Using GTK+ 2.x and GTK+ 3 in the same process is not supported.
+Gtk-Message: 12:17:40.709: Failed to load module "canberra-gtk-module"
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ curl --compresed https://cdn.jwplayer.com/manifests/pZxWPRg4.m3u8
+curl: option --compresed: is unknown
+curl: try 'curl --help' or 'curl --manual' for more information
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ curl --compressed https://cdn.jwplayer.com/manifests/pZxWPRg4.m3u8
+#EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=960000,RESOLUTION=640x360,CODECS="mp4a.40.2,avc1.4d401e",FRAME-RATE=30.0,CLOSED-CAPTIONS=NONE
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=841568.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5220000,RESOLUTION=1920x1080,CODECS="mp4a.40.2,avc1.640028",FRAME-RATE=30.0,CLOSED-CAPTIONS=NONE
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=5099752.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2580000,RESOLUTION=1280x720,CODECS="mp4a.40.2,avc1.4d401f",FRAME-RATE=30.0,CLOSED-CAPTIONS=NONE
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=2462768.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1650000,RESOLUTION=960x540,CODECS="mp4a.40.2,avc1.4d401f",FRAME-RATE=30.0,CLOSED-CAPTIONS=NONE
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=1537008.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=760000,RESOLUTION=480x270,CODECS="mp4a.40.2,avc1.42c015",FRAME-RATE=30.0,CLOSED-CAPTIONS=NONE
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=639296.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=530000,RESOLUTION=320x180,CODECS="mp4a.40.2,avc1.42c00d",FRAME-RATE=30.0,CLOSED-CAPTIONS=NONE
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=413600.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=120000,CODECS="mp4a.40.2"
+https://videos-cloudfront-usp.jwpsrv.com/689a3fd6_302ffe289ee4fc4ba0c7c38787dbfa897155cc09/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000.m3u8
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffmpeg -i https://cdn.jwplayer.com/manifests/pZxWPRg4.m3u8
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=841568.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[https @ 0x5c378c6dbac0] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=5099752.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[https @ 0x5c378c6dbac0] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=2462768.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[https @ 0x5c378c6dbac0] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=1537008.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[https @ 0x5c378c6dbac0] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=639296.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[https @ 0x5c378c6dbac0] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=413600.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[https @ 0x5c378c6dbac0] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000.m3u8' for reading
+[hls @ 0x5c378c305100] Skip ('#EXT-X-VERSION:4')
+[hls @ 0x5c378c305100] Skip ('## Created with Unified Streaming Platform  (version=1.15.1-31309)')
+[hls @ 0x5c378c305100] Skip ('#EXT-X-INDEPENDENT-SEGMENTS')
+[hls @ 0x5c378c305100] Skip ('#USP-X-TIMESTAMP-MAP:MPEGTS=900000,LOCAL=1970-01-01T00:00:00Z')
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=841568-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=841568-2.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=5099752-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=5099752-2.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=2462768-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=2462768-2.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=1537008-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=1537008-2.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=639296-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=639296-2.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=413600-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-video_0_q7BAv3mA_Uql258jy=413600-2.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-1.ts' for reading
+[hls @ 0x5c378c305100] Opening 'https://videos-cloudfront-usp.jwpsrv.com/689a3fe7_84f6d7c4320e6a6b7a38fc45d71a6bd01ac54b2d/sites/MDzvJl71/media/pZxWPRg4/versions/pZxWPRg4/manifest.ism/manifest-audio_0_q7BAv3mA_WbaG9LKN=112000-2.ts' for reading
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=903000, dts=909000, size=536
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=903000, dts=909000, size=4904
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=903000, dts=909000, size=1975
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=903000, dts=909000, size=1116
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=909000, dts=912000, size=653
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=909000, dts=912000, size=5675
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=909000, dts=912000, size=2153
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=909000, dts=912000, size=1310
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=903000, dts=909000, size=536
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=903000, dts=909000, size=4904
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=903000, dts=909000, size=1975
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=903000, dts=909000, size=1116
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=909000, dts=912000, size=653
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=909000, dts=912000, size=5675
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=909000, dts=912000, size=2153
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=909000, dts=912000, size=1310
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=915000, dts=921000, size=632
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=915000, dts=921000, size=5433
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=915000, dts=921000, size=2075
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=915000, dts=921000, size=1225
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=921000, dts=924000, size=708
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=921000, dts=924000, size=5727
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=921000, dts=924000, size=2336
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=921000, dts=924000, size=1375
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=915000, dts=921000, size=632
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=915000, dts=921000, size=5433
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=915000, dts=921000, size=2075
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=915000, dts=921000, size=1225
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=921000, dts=924000, size=708
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=921000, dts=924000, size=5727
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=921000, dts=924000, size=2336
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=921000, dts=924000, size=1375
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=927000, dts=933000, size=788
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=927000, dts=933000, size=6610
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=927000, dts=933000, size=2466
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=927000, dts=933000, size=1602
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=933000, dts=936000, size=958
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=933000, dts=936000, size=6426
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=933000, dts=936000, size=2762
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=933000, dts=936000, size=1619
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=927000, dts=933000, size=788
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=927000, dts=933000, size=6610
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=927000, dts=933000, size=2466
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=927000, dts=933000, size=1602
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=933000, dts=936000, size=958
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=933000, dts=936000, size=6426
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=933000, dts=936000, size=2762
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=933000, dts=936000, size=1619
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=939000, dts=945000, size=763
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=939000, dts=945000, size=6392
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=939000, dts=945000, size=2488
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=939000, dts=945000, size=1563
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=945000, dts=948000, size=673
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=945000, dts=948000, size=5681
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=945000, dts=948000, size=2234
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=945000, dts=948000, size=1473
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=939000, dts=945000, size=763
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=939000, dts=945000, size=6392
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=939000, dts=945000, size=2488
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=939000, dts=945000, size=1563
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=945000, dts=948000, size=673
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=945000, dts=948000, size=5681
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=945000, dts=948000, size=2234
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=945000, dts=948000, size=1473
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=951000, dts=957000, size=617
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=951000, dts=957000, size=5418
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=951000, dts=957000, size=2447
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=951000, dts=957000, size=1309
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=957000, dts=960000, size=635
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=957000, dts=960000, size=5413
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=957000, dts=960000, size=2262
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=957000, dts=960000, size=1426
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=951000, dts=957000, size=617
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=951000, dts=957000, size=5418
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=951000, dts=957000, size=2447
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=951000, dts=957000, size=1309
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=957000, dts=960000, size=635
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=957000, dts=960000, size=5413
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=957000, dts=960000, size=2262
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=957000, dts=960000, size=1426
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=963000, dts=969000, size=580
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=963000, dts=969000, size=5685
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=963000, dts=969000, size=2278
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=963000, dts=969000, size=1370
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=969000, dts=972000, size=455
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=969000, dts=972000, size=4499
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=969000, dts=972000, size=1719
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=969000, dts=972000, size=1072
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=963000, dts=969000, size=580
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=963000, dts=969000, size=5685
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=963000, dts=969000, size=2278
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=963000, dts=969000, size=1370
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=969000, dts=972000, size=455
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=969000, dts=972000, size=4499
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=969000, dts=972000, size=1719
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=969000, dts=972000, size=1072
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=975000, dts=981000, size=437
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=975000, dts=981000, size=5872
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=975000, dts=981000, size=1861
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=975000, dts=981000, size=1096
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=981000, dts=984000, size=525
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=981000, dts=984000, size=6010
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=981000, dts=984000, size=2071
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=981000, dts=984000, size=1241
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=975000, dts=981000, size=437
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=975000, dts=981000, size=5872
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=975000, dts=981000, size=1861
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=975000, dts=981000, size=1096
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=981000, dts=984000, size=525
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=981000, dts=984000, size=6010
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=981000, dts=984000, size=2071
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=981000, dts=984000, size=1241
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=987000, dts=993000, size=620
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=987000, dts=993000, size=7391
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=987000, dts=993000, size=2776
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=987000, dts=993000, size=1494
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=993000, dts=996000, size=548
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=993000, dts=996000, size=7281
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=993000, dts=996000, size=2664
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=993000, dts=996000, size=1363
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=987000, dts=993000, size=620
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=987000, dts=993000, size=7391
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=987000, dts=993000, size=2776
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=987000, dts=993000, size=1494
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=993000, dts=996000, size=548
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=993000, dts=996000, size=7281
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=993000, dts=996000, size=2664
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=993000, dts=996000, size=1363
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=999000, dts=1005000, size=465
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=999000, dts=1005000, size=7092
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=999000, dts=1005000, size=2552
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=999000, dts=1005000, size=1290
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1005000, dts=1008000, size=386
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1005000, dts=1008000, size=6067
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1005000, dts=1008000, size=1960
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1005000, dts=1008000, size=966
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=999000, dts=1005000, size=465
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=999000, dts=1005000, size=7092
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=999000, dts=1005000, size=2552
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=999000, dts=1005000, size=1290
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1005000, dts=1008000, size=386
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1005000, dts=1008000, size=6067
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1005000, dts=1008000, size=1960
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1005000, dts=1008000, size=966
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1011000, dts=1017000, size=453
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1011000, dts=1017000, size=6597
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1011000, dts=1017000, size=2242
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1011000, dts=1017000, size=1106
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1017000, dts=1020000, size=621
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1017000, dts=1020000, size=7099
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1017000, dts=1020000, size=2512
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1017000, dts=1020000, size=1325
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1011000, dts=1017000, size=453
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1011000, dts=1017000, size=6597
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1011000, dts=1017000, size=2242
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1011000, dts=1017000, size=1106
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1017000, dts=1020000, size=621
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1017000, dts=1020000, size=7099
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1017000, dts=1020000, size=2512
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1017000, dts=1020000, size=1325
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1023000, dts=1029000, size=638
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1023000, dts=1029000, size=7818
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1023000, dts=1029000, size=2765
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1023000, dts=1029000, size=1519
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1029000, dts=1032000, size=582
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1029000, dts=1032000, size=7133
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1029000, dts=1032000, size=2524
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1029000, dts=1032000, size=1272
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1023000, dts=1029000, size=638
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1023000, dts=1029000, size=7818
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1023000, dts=1029000, size=2765
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1023000, dts=1029000, size=1519
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1029000, dts=1032000, size=582
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1029000, dts=1032000, size=7133
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1029000, dts=1032000, size=2524
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1029000, dts=1032000, size=1272
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1035000, dts=1041000, size=522
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1035000, dts=1041000, size=7729
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1035000, dts=1041000, size=2386
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1035000, dts=1041000, size=1266
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1041000, dts=1044000, size=364
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1041000, dts=1044000, size=6491
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1041000, dts=1044000, size=1850
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1041000, dts=1044000, size=936
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1035000, dts=1041000, size=522
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1035000, dts=1041000, size=7729
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1035000, dts=1041000, size=2386
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1035000, dts=1041000, size=1266
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1041000, dts=1044000, size=364
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1041000, dts=1044000, size=6491
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1041000, dts=1044000, size=1850
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1041000, dts=1044000, size=936
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1047000, dts=1053000, size=482
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1047000, dts=1053000, size=7296
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1047000, dts=1053000, size=2362
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1047000, dts=1053000, size=1188
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1053000, dts=1056000, size=518
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1053000, dts=1056000, size=7794
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1053000, dts=1056000, size=2421
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1053000, dts=1056000, size=1368
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1047000, dts=1053000, size=482
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1047000, dts=1053000, size=7296
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1047000, dts=1053000, size=2362
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1047000, dts=1053000, size=1188
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1053000, dts=1056000, size=518
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1053000, dts=1056000, size=7794
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1053000, dts=1056000, size=2421
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1053000, dts=1056000, size=1368
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1059000, dts=1065000, size=615
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1059000, dts=1065000, size=8423
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1059000, dts=1065000, size=2837
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1059000, dts=1065000, size=1565
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1065000, dts=1068000, size=639
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1065000, dts=1068000, size=8533
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1065000, dts=1068000, size=2706
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1065000, dts=1068000, size=1599
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1059000, dts=1065000, size=615
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1059000, dts=1065000, size=8423
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1059000, dts=1065000, size=2837
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1059000, dts=1065000, size=1565
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1065000, dts=1068000, size=639
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1065000, dts=1068000, size=8533
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1065000, dts=1068000, size=2706
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1065000, dts=1068000, size=1599
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1071000, dts=1077000, size=558
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1071000, dts=1077000, size=8369
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1071000, dts=1077000, size=2838
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1071000, dts=1077000, size=1512
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1077000, dts=1080000, size=538
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1077000, dts=1080000, size=8013
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1077000, dts=1080000, size=2474
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1077000, dts=1080000, size=1329
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1071000, dts=1077000, size=558
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1071000, dts=1077000, size=8369
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1071000, dts=1077000, size=2838
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1071000, dts=1077000, size=1512
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1077000, dts=1080000, size=538
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1077000, dts=1080000, size=8013
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1077000, dts=1080000, size=2474
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1077000, dts=1080000, size=1329
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1083000, dts=1089000, size=518
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1083000, dts=1089000, size=8053
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1083000, dts=1089000, size=2634
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1083000, dts=1089000, size=1313
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1089000, dts=1092000, size=557
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1089000, dts=1092000, size=7591
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1089000, dts=1092000, size=2328
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1089000, dts=1092000, size=1257
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1083000, dts=1089000, size=518
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1083000, dts=1089000, size=8053
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1083000, dts=1089000, size=2634
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1083000, dts=1089000, size=1313
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1089000, dts=1092000, size=557
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1089000, dts=1092000, size=7591
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1089000, dts=1092000, size=2328
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1089000, dts=1092000, size=1257
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1095000, dts=1101000, size=426
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1095000, dts=1101000, size=7728
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1095000, dts=1101000, size=2218
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1095000, dts=1101000, size=1251
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1101000, dts=1104000, size=417
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1101000, dts=1104000, size=7868
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1101000, dts=1104000, size=2171
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1101000, dts=1104000, size=950
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1095000, dts=1101000, size=426
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1095000, dts=1101000, size=7728
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1095000, dts=1101000, size=2218
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1095000, dts=1101000, size=1251
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1101000, dts=1104000, size=417
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1101000, dts=1104000, size=7868
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1101000, dts=1104000, size=2171
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1101000, dts=1104000, size=950
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1107000, dts=1113000, size=476
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1107000, dts=1113000, size=8408
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1107000, dts=1113000, size=2366
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1107000, dts=1113000, size=1226
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1113000, dts=1116000, size=423
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1113000, dts=1116000, size=7932
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1113000, dts=1116000, size=2186
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1113000, dts=1116000, size=1045
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1107000, dts=1113000, size=476
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1107000, dts=1113000, size=8408
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1107000, dts=1113000, size=2366
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1107000, dts=1113000, size=1226
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1113000, dts=1116000, size=423
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1113000, dts=1116000, size=7932
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1113000, dts=1116000, size=2186
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1113000, dts=1116000, size=1045
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1119000, dts=1125000, size=445
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1119000, dts=1125000, size=7900
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1119000, dts=1125000, size=2277
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1119000, dts=1125000, size=1214
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1125000, dts=1128000, size=428
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1125000, dts=1128000, size=7317
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1125000, dts=1128000, size=2166
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1125000, dts=1128000, size=1156
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1119000, dts=1125000, size=445
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1119000, dts=1125000, size=7900
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1119000, dts=1125000, size=2277
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1119000, dts=1125000, size=1214
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1125000, dts=1128000, size=428
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1125000, dts=1128000, size=7317
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1125000, dts=1128000, size=2166
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1125000, dts=1128000, size=1156
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1131000, dts=1137000, size=440
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1131000, dts=1137000, size=7830
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1131000, dts=1137000, size=2188
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1131000, dts=1137000, size=1160
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1137000, dts=1140000, size=467
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1137000, dts=1140000, size=7369
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1137000, dts=1140000, size=1997
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1137000, dts=1140000, size=1052
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1131000, dts=1137000, size=440
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1131000, dts=1137000, size=7830
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1131000, dts=1137000, size=2188
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1131000, dts=1137000, size=1160
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1137000, dts=1140000, size=467
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1137000, dts=1140000, size=7369
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1137000, dts=1140000, size=1997
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1137000, dts=1140000, size=1052
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1143000, dts=1149000, size=462
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1143000, dts=1149000, size=7660
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1143000, dts=1149000, size=2293
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1143000, dts=1149000, size=1148
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1149000, dts=1152000, size=450
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1149000, dts=1152000, size=7681
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1149000, dts=1152000, size=2326
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1149000, dts=1152000, size=997
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1143000, dts=1149000, size=462
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1143000, dts=1149000, size=7660
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1143000, dts=1149000, size=2293
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1143000, dts=1149000, size=1148
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1149000, dts=1152000, size=450
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1149000, dts=1152000, size=7681
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1149000, dts=1152000, size=2326
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1149000, dts=1152000, size=997
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1155000, dts=1161000, size=429
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1155000, dts=1161000, size=7298
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1155000, dts=1161000, size=2213
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1155000, dts=1161000, size=1125
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1161000, dts=1164000, size=381
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1161000, dts=1164000, size=7013
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1161000, dts=1164000, size=2095
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1161000, dts=1164000, size=1027
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1155000, dts=1161000, size=429
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1155000, dts=1161000, size=7298
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1155000, dts=1161000, size=2213
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1155000, dts=1161000, size=1125
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1161000, dts=1164000, size=381
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1161000, dts=1164000, size=7013
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1161000, dts=1164000, size=2095
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1161000, dts=1164000, size=1027
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1167000, dts=1173000, size=6482
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1167000, dts=1173000, size=2010
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1167000, dts=1173000, size=934
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1173000, dts=1176000, size=6600
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1173000, dts=1176000, size=2021
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1173000, dts=1176000, size=943
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1173000, dts=1179000, size=377
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1167000, dts=1173000, size=6482
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1167000, dts=1173000, size=2010
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1167000, dts=1173000, size=934
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1179000, dts=1182000, size=340
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1173000, dts=1176000, size=6600
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1173000, dts=1176000, size=2021
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1173000, dts=1176000, size=943
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1173000, dts=1179000, size=377
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1179000, dts=1185000, size=6096
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1179000, dts=1185000, size=2043
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1179000, dts=1185000, size=884
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1179000, dts=1182000, size=340
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1185000, dts=1188000, size=6832
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1185000, dts=1188000, size=2163
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1185000, dts=1188000, size=1029
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1185000, dts=1191000, size=401
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1179000, dts=1185000, size=6096
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1179000, dts=1185000, size=2043
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1179000, dts=1185000, size=884
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1191000, dts=1194000, size=473
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1185000, dts=1188000, size=6832
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1185000, dts=1188000, size=2163
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1185000, dts=1188000, size=1029
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1185000, dts=1191000, size=401
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1191000, dts=1197000, size=6959
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1191000, dts=1197000, size=2389
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1191000, dts=1197000, size=1224
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1191000, dts=1194000, size=473
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1197000, dts=1200000, size=7672
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1197000, dts=1200000, size=2583
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1197000, dts=1200000, size=1322
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1197000, dts=1203000, size=580
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1191000, dts=1197000, size=6959
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1191000, dts=1197000, size=2389
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1191000, dts=1197000, size=1224
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1203000, dts=1206000, size=606
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1197000, dts=1200000, size=7672
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1197000, dts=1200000, size=2583
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1197000, dts=1200000, size=1322
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1197000, dts=1203000, size=580
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1203000, dts=1209000, size=8003
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1203000, dts=1209000, size=2854
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1203000, dts=1209000, size=1458
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1203000, dts=1206000, size=606
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1209000, dts=1212000, size=8198
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1209000, dts=1212000, size=2753
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1209000, dts=1212000, size=1514
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1209000, dts=1215000, size=623
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1203000, dts=1209000, size=8003
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1203000, dts=1209000, size=2854
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1203000, dts=1209000, size=1458
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1215000, dts=1218000, size=564
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1209000, dts=1212000, size=8198
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1209000, dts=1212000, size=2753
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1209000, dts=1212000, size=1514
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1209000, dts=1215000, size=623
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1215000, dts=1221000, size=7426
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1215000, dts=1221000, size=2717
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1215000, dts=1221000, size=1393
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1215000, dts=1218000, size=564
+[mpegts @ 0x5c378caccac0] Invalid timestamps stream=1, pts=1221000, dts=1224000, size=7225
+[mpegts @ 0x5c378d25cb00] Invalid timestamps stream=1, pts=1221000, dts=1224000, size=2286
+[mpegts @ 0x5c378ddc9100] Invalid timestamps stream=1, pts=1221000, dts=1224000, size=1253
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1221000, dts=1227000, size=530
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1215000, dts=1221000, size=7426
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1215000, dts=1221000, size=2717
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1215000, dts=1221000, size=1393
+[mpegts @ 0x5c378c6f5a40] Invalid timestamps stream=1, pts=1227000, dts=1230000, size=527
+[hls @ 0x5c378c305100] Invalid timestamps stream=3, pts=1221000, dts=1224000, size=7225
+[hls @ 0x5c378c305100] Invalid timestamps stream=5, pts=1221000, dts=1224000, size=2286
+[hls @ 0x5c378c305100] Invalid timestamps stream=7, pts=1221000, dts=1224000, size=1253
+[hls @ 0x5c378c305100] Invalid timestamps stream=1, pts=1221000, dts=1227000, size=530
+Input #0, hls, from 'https://cdn.jwplayer.com/manifests/pZxWPRg4.m3u8':
+  Duration: 00:01:10.83, start: 9.953567, bitrate: 0 kb/s
+  Program 0 
+    Metadata:
+      variant_bitrate : 960000
+  Stream #0:0: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 960000
+  Stream #0:1: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      variant_bitrate : 960000
+  Program 1 
+    Metadata:
+      variant_bitrate : 5220000
+  Stream #0:2: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 5220000
+  Stream #0:3: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      variant_bitrate : 5220000
+  Program 2 
+    Metadata:
+      variant_bitrate : 2580000
+  Stream #0:4: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 2580000
+  Stream #0:5: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p, 1280x720 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      variant_bitrate : 2580000
+  Program 3 
+    Metadata:
+      variant_bitrate : 1650000
+  Stream #0:6: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 1650000
+  Stream #0:7: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p, 960x540 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      variant_bitrate : 1650000
+  Program 4 
+    Metadata:
+      variant_bitrate : 760000
+  Stream #0:8: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 760000
+  Stream #0:9: Video: h264 (Constrained Baseline) ([27][0][0][0] / 0x001B), yuv420p, 480x270 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      variant_bitrate : 760000
+  Program 5 
+    Metadata:
+      variant_bitrate : 530000
+  Stream #0:10: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 530000
+  Stream #0:11: Video: h264 (Constrained Baseline) ([27][0][0][0] / 0x001B), yuv420p, 320x180 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, 60 tbc
+    Metadata:
+      variant_bitrate : 530000
+  Program 6 
+    Metadata:
+      variant_bitrate : 120000
+  Stream #0:12: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp
+    Metadata:
+      variant_bitrate : 120000
+At least one output file must be specified
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ curl --compressed https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:6
+#EXT-X-MEDIA-SEQUENCE:124
+#EXT-X-CUE-OUT-CONT: 624.023193/719.000000
+#EXTINF:6.006000,
+seg_0000124.ts
+#EXT-X-CUE-OUT-CONT: 630.029175/719.000000
+#EXTINF:5.972633,
+seg_0000125.ts
+#EXT-X-CUE-OUT-CONT: 636.001831/719.000000
+#EXTINF:6.006000,
+seg_0000126.ts
+#EXT-X-CUE-OUT-CONT: 642.007812/719.000000
+#EXTINF:6.006000,
+seg_0000127.ts
+#EXT-X-CUE-OUT-CONT: 648.013794/719.000000
+#EXTINF:6.006000,
+seg_0000128.ts
+#EXT-X-PROGRAM-DATE-TIME:2025-08-11T07:11:33.320+00:00
+#EXT-X-CUE-OUT-CONT: 654.019836/719.000000
+#EXTINF:6.006000,
+seg_0000129.ts
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/seg_0000128.ts
+--2025-08-11 12:42:47--  https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/seg_0000128.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.99, 108.159.5.149, 108.159.5.84, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.99|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3240180 (3.1M) [video/mp2t]
+Saving to: ‘seg_0000128.ts’
+
+seg_0000128.ts                                     100%[================================================================================================================>]   3.09M  6.71MB/s    in 0.5s    
+
+2025-08-11 12:42:48 (6.71 MB/s) - ‘seg_0000128.ts’ saved [3240180/3240180]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffmpeg -i seg_0000128.ts
+ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x5985f8223100] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000128.ts':
+  Duration: 00:00:06.02, start: 68093.871678, bitrate: 4305 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuvj420p(pc, bt709), 1920x1080 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 29.97 tbc
+  Stream #0:1[0x101]: Audio: ac3 (AC-3 / 0x332D4341), 48000 Hz, stereo, fltp, 128 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+At least one output file must be specified
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay seg_0000128.ts
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x7dd934000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000128.ts':
+  Duration: 00:00:06.02, start: 68093.871678, bitrate: 4305 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuvj420p(pc, bt709), 1920x1080 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 29.97 tbc
+  Stream #0:1[0x101]: Audio: ac3 (AC-3 / 0x332D4341), 48000 Hz, stereo, fltp, 128 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+[swscaler @ 0x7dd90c9aba40] deprecated pixel format used, make sure you did set range correctly
+68107.14 A-V: -0.037 fd=   4 aq=    0KB vq=    0KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000128.ts
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x72fb64000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000128.ts':
+  Duration: 00:00:06.02, start: 68093.871678, bitrate: 4305 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuvj420p(pc, bt709), 1920x1080 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 29.97 tbc
+  Stream #0:1[0x101]: Audio: ac3 (AC-3 / 0x332D4341), 48000 Hz, stereo, fltp, 128 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+[swscaler @ 0x72fb349aba40] deprecated pixel format used, make sure you did set range correctly
+68110.71 A-V: -0.020 fd=   3 aq=    0KB vq=    0KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/seg_0000129.ts
+--2025-08-11 12:45:09--  https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/seg_0000129.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.149, 108.159.5.99, 108.159.5.84, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3296768 (3.1M) [video/mp2t]
+Saving to: ‘seg_0000129.ts’
+
+seg_0000129.ts                                     100%[================================================================================================================>]   3.14M  5.29MB/s    in 0.6s    
+
+2025-08-11 12:45:13 (5.29 MB/s) - ‘seg_0000129.ts’ saved [3296768/3296768]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000129.ts
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x78a304000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000129.ts':
+  Duration: 00:00:06.02, start: 68099.887678, bitrate: 4384 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuvj420p(pc, bt709), 1920x1080 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 29.97 tbc
+  Stream #0:1[0x101]: Audio: ac3 (AC-3 / 0x332D4341), 48000 Hz, stereo, fltp, 128 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+[swscaler @ 0x78a2d49aba40] deprecated pixel format used, make sure you did set range correctly
+68101.36 A-V: -0.014 fd=   5 aq=   20KB vq=  438KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000129.ts
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x7065b4000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000129.ts':
+  Duration: 00:00:06.02, start: 68099.887678, bitrate: 4384 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuvj420p(pc, bt709), 1920x1080 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 29.97 tbc
+  Stream #0:1[0x101]: Audio: ac3 (AC-3 / 0x332D4341), 48000 Hz, stereo, fltp, 128 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+[swscaler @ 0x7065849aba40] deprecated pixel format used, make sure you did set range correctly
+68101.44 A-V: -0.005 fd=   4 aq=   20KB vq=  478KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/seg_0000100.ts
+--2025-08-11 12:46:29--  https://dst7ty264hqww.cloudfront.net/LH235/1080p-hlsv3-ts/seg_0000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.149, 108.159.5.99, 108.159.5.84, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3285488 (3.1M) [video/mp2t]
+Saving to: ‘seg_0000100.ts’
+
+seg_0000100.ts                                     100%[================================================================================================================>]   3.13M  4.75MB/s    in 0.7s    
+
+2025-08-11 12:46:30 (4.75 MB/s) - ‘seg_0000100.ts’ saved [3285488/3285488]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000100.ts
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
