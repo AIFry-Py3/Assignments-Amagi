@@ -860,3 +860,212 @@ ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg develop
   libavfilter     7.110.100 /  7.110.100
   libswscale      5.  9.100 /  5.  9.100
   libswresample   3.  9.100 /  3.  9.100
+
+
+
+
+
+
+
+
+
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/master-hlsv3-ts/index.m3u8
+--2025-08-11 12:49:23--  https://dst7ty264hqww.cloudfront.net/LH235/master-hlsv3-ts/index.m3u8
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.99, 108.159.5.84, 108.159.5.83, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.99|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 12:49:25 ERROR 403: Forbidden.
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/index.m3u8
+--2025-08-11 12:49:35--  https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/index.m3u8
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.149, 108.159.5.99, 108.159.5.83, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.149|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 12:49:37 ERROR 403: Forbidden.
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/720p-hlsv3-ts/index.m3u8
+--2025-08-11 12:49:46--  https://dst7ty264hqww.cloudfront.net/LH235/720p-hlsv3-ts/index.m3u8
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.84, 108.159.5.99, 108.159.5.83, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.84|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 326 [application/vnd.apple.mpegurl]
+Saving to: ‘index.m3u8’
+
+index.m3u8                                         100%[================================================================================================================>]     326  --.-KB/s    in 0s      
+
+2025-08-11 12:49:51 (388 MB/s) - ‘index.m3u8’ saved [326/326]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay index.m3u8 
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[libgme @ 0x733db4000cc0] Format libgme detected only with low score of 25, misdetection possible!
+index.m3u8: Invalid data found when processing input
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/720p-hlsv3-ts/seg_000100.ts
+--2025-08-11 12:51:59--  https://dst7ty264hqww.cloudfront.net/LH235/720p-hlsv3-ts/seg_000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.84, 108.159.5.149, 108.159.5.83, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.84|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 12:52:03 ERROR 403: Forbidden.
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/720p-hlsv3-ts/seg_0000100.ts
+--2025-08-11 12:53:24--  https://dst7ty264hqww.cloudfront.net/LH235/720p-hlsv3-ts/seg_0000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.149, 108.159.5.83, 108.159.5.84, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1847488 (1.8M) [video/mp2t]
+Saving to: ‘seg_0000100.ts.1’
+
+seg_0000100.ts.1                              100%[================================================================================================>]   1.76M  2.15MB/s    in 0.8s    
+
+2025-08-11 12:53:25 (2.15 MB/s) - ‘seg_0000100.ts.1’ saved [1847488/1847488]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000100.ts
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x734260000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000100.ts':
+  Duration: 00:00:06.02, start: 67925.871678, bitrate: 4366 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: hevc (Main) ([36][0][0][0] / 0x0024), yuvj420p(pc, bt709), 1920x1080 [SAR 1:1 DAR 16:9], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 29.97 tbc
+  Stream #0:1[0x101]: Audio: ac3 (AC-3 / 0x332D4341), 48000 Hz, stereo, fltp, 128 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+[swscaler @ 0x7342389aba40] deprecated pixel format used, make sure you did set range correctly
+67928.20 A-V: -0.010 fd=   4 aq=   20KB vq=  449KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/seg_0000100.ts
+--2025-08-11 12:53:45--  https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/seg_0000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.84, 108.159.5.149, 108.159.5.99, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.84|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 12:53:46 ERROR 403: Forbidden.
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/480p-hlsv3-ts/seg_0000100.ts
+--2025-08-11 12:53:56--  https://dst7ty264hqww.cloudfront.net/LH235/480p-hlsv3-ts/seg_0000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.149, 108.159.5.84, 108.159.5.83, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.149|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1026480 (1002K) [video/mp2t]
+Saving to: ‘seg_0000100.ts.2’
+
+seg_0000100.ts.2                              100%[================================================================================================>]   1002K  --.-KB/s    in 0.1s    
+
+2025-08-11 12:53:57 (8.11 MB/s) - ‘seg_0000100.ts.2’ saved [1026480/1026480]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/480p-hlsv3-ts/seg_0000100.ts
+--2025-08-11 12:54:14--  https://dst7ty264hqww.cloudfront.net/LH235/480p-hlsv3-ts/seg_0000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.99, 108.159.5.83, 108.159.5.149, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.99|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1026480 (1002K) [video/mp2t]
+Saving to: ‘seg_0000100.ts.3’
+
+seg_0000100.ts.3                              100%[================================================================================================>]   1002K  --.-KB/s    in 0.1s    
+
+2025-08-11 12:54:14 (7.85 MB/s) - ‘seg_0000100.ts.3’ saved [1026480/1026480]
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000100.ts.
+seg_0000100.ts.1  seg_0000100.ts.2  seg_0000100.ts.3  
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000100.ts.
+seg_0000100.ts.1  seg_0000100.ts.2  seg_0000100.ts.3  
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000100.ts.2
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x740938000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000100.ts.2':
+  Duration: 00:00:06.01, start: 67925.882344, bitrate: 1366 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: h264 (High) (HDMV / 0x564D4448), yuv420p(tv, bt709, progressive), 848x480 [SAR 1:1 DAR 53:30], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+  Stream #0:1[0x101]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 131 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+67931.87 A-V: -0.013 fd=   3 aq=    0KB vq=    0KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ ffplay -fs seg_0000100.ts.3
+ffplay version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2003-2021 the FFmpeg developers
+  built with gcc 11 (Ubuntu 11.2.0-19ubuntu1)
+  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+[mpegts @ 0x7b5370000cc0] start time for stream 2 is not set in estimate_timings_from_pts
+Input #0, mpegts, from 'seg_0000100.ts.3':
+  Duration: 00:00:06.01, start: 67925.882344, bitrate: 1366 kb/s
+  Program 1 
+  Stream #0:0[0x100]: Video: h264 (High) (HDMV / 0x564D4448), yuv420p(tv, bt709, progressive), 848x480 [SAR 1:1 DAR 53:30], Closed Captions, 29.97 fps, 29.97 tbr, 90k tbn, 59.94 tbc
+  Stream #0:1[0x101]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, 131 kb/s
+  Stream #0:2[0x1f4]: Data: scte_35
+67931.68 A-V: -0.009 fd=   2 aq=    0KB vq=    0KB sq=    0B f=0/0   
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/seg_0000100.ts
+--2025-08-11 12:55:01--  https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/seg_0000100.ts
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.84, 108.159.5.83, 108.159.5.99, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.84|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 12:55:02 ERROR 403: Forbidden.
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ hexdump -C key_txr1hl1xpd.txt
+hexdump: key_txr1hl1xpd.txt: No such file or directory
+hexdump: all input file arguments failed
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ curl --compressed https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/key_txr1hl1xpd.txt
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message></Error>sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ 
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ curl --compressed https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/key_txr1hl1xpd.txt
+
+
+
+
+^C
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/key_txr1hl1xpd.txt
+--2025-08-11 12:59:52--  https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/key_txr1hl1xpd.txt
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 108.159.5.99, 108.159.5.84, 108.159.5.149, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|108.159.5.99|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 12:59:58 ERROR 403: Forbidden.
+
+sharanya@sharanya-Inspiron-14-5430:~/hls_out$ wget https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/key_txr1hl1xpd.txt
+--2025-08-11 20:12:40--  https://dst7ty264hqww.cloudfront.net/LH235/240p-hlsv3-ts/key_txr1hl1xpd.txt
+Resolving dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)... 2600:9000:24d8:c600:17:cfa7:a000:21, 2600:9000:24d8:b200:17:cfa7:a000:21, 2600:9000:24d8:dc00:17:cfa7:a000:21, ...
+Connecting to dst7ty264hqww.cloudfront.net (dst7ty264hqww.cloudfront.net)|2600:9000:24d8:c600:17:cfa7:a000:21|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-08-11 20:12:40 ERROR 403: Forbidden.
